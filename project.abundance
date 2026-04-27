@@ -679,6 +679,56 @@
           "currentEquation": "Height"
         }
       ]
+    },
+    {
+      "atomType": "Add-BOM-Tag",
+      "x": 0.8069661458333334,
+      "y": 0.2949932341001353,
+      "uniqueID": "id-903",
+      "name": "Add BOM Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Item Name",
+          "ioValue": "New Item",
+          "currentEquation": "New Item"
+        },
+        {
+          "name": "Number Needed",
+          "ioValue": 1
+        },
+        {
+          "name": "Cost (USD)",
+          "ioValue": 0
+        },
+        {
+          "name": "Source Link",
+          "ioValue": ""
+        }
+      ],
+      "BOMitem": {
+        "BOMitemName": "New Item",
+        "numberNeeded": 1,
+        "costUSD": 0,
+        "source": ""
+      }
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.6647135416666667,
+      "y": 0.2516914749661705,
+      "uniqueID": "id-910",
+      "name": "\"Drawer Slide \" + l + \" inches\"",
+      "ioValues": [
+        {
+          "name": "l",
+          "ioValue": 1
+        }
+      ],
+      "currentEquation": "\"Drawer Slide \" + l + \" inches\""
     }
   ],
   "allConnectors": [
@@ -692,6 +742,7 @@
       "ap1ID": "id-758",
       "ap2ID": "id-866"
     },
+    null,
     {
       "ap2Name": "geometry",
       "ap1ID": "id-767",
@@ -761,6 +812,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-858",
       "ap2ID": "id-756"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-858",
+      "ap2ID": "id-903"
     },
     {
       "ap2Name": "geometry",
