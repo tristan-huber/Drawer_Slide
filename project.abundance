@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "Length",
-      "ioValue": 10
+      "ioValue": 20,
+      "currentEquation": "20"
     }
   ],
   "topLevel": true,
@@ -39,7 +40,7 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 10
+          "ioValue": 20
         },
         {
           "name": "y length",
@@ -427,7 +428,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": -3.62,
+          "ioValue": -8.620000000000001,
           "currentEquation": "-1 * Length / 2 + 1.38"
         },
         {
@@ -552,7 +553,7 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 10
+          "ioValue": 20
         },
         {
           "name": "y length",
@@ -682,8 +683,8 @@
     },
     {
       "atomType": "Add-BOM-Tag",
-      "x": 0.8069661458333334,
-      "y": 0.2949932341001353,
+      "x": 0.8466796875,
+      "y": 0.3085250338294993,
       "uniqueID": "id-903",
       "name": "Add BOM Tag",
       "ioValues": [
@@ -693,42 +694,57 @@
         },
         {
           "name": "Item Name",
-          "ioValue": "New Item",
+          "ioValue": "Drawer Slide 20 inches",
           "currentEquation": "New Item"
         },
         {
           "name": "Number Needed",
-          "ioValue": 1
+          "ioValue": 0.5
         },
         {
           "name": "Cost (USD)",
-          "ioValue": 0
+          "ioValue": 170
         },
         {
           "name": "Source Link",
-          "ioValue": ""
+          "ioValue": "https://www.mcmaster.com/11435A14/",
+          "currentEquation": "https://www.mcmaster.com/11435A14/"
         }
       ],
       "BOMitem": {
-        "BOMitemName": "New Item",
-        "numberNeeded": 1,
-        "costUSD": 0,
-        "source": ""
+        "BOMitemName": "Drawer Slide 20 inches",
+        "numberNeeded": 0.5,
+        "costUSD": 170,
+        "source": "https://www.mcmaster.com/11435A14/"
       }
     },
     {
       "atomType": "Equation",
-      "x": 0.6647135416666667,
-      "y": 0.2516914749661705,
+      "x": 0.7275390625,
+      "y": 0.12313937753721245,
       "uniqueID": "id-910",
       "name": "\"Drawer Slide \" + l + \" inches\"",
       "ioValues": [
         {
           "name": "l",
-          "ioValue": 1
+          "ioValue": 20
         }
       ],
       "currentEquation": "\"Drawer Slide \" + l + \" inches\""
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.6927083333333334,
+      "y": 0.3044654939106901,
+      "uniqueID": "id-915",
+      "name": "(l - 10) * 15 + 20",
+      "ioValues": [
+        {
+          "name": "l",
+          "ioValue": 20
+        }
+      ],
+      "currentEquation": "(l - 10) * 15 + 20"
     }
   ],
   "allConnectors": [
@@ -742,7 +758,16 @@
       "ap1ID": "id-758",
       "ap2ID": "id-866"
     },
-    null,
+    {
+      "ap2Name": "l",
+      "ap1ID": "id-758",
+      "ap2ID": "id-910"
+    },
+    {
+      "ap2Name": "l",
+      "ap1ID": "id-758",
+      "ap2ID": "id-915"
+    },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-767",
@@ -809,11 +834,6 @@
       "ap2ID": "id-878"
     },
     {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-858",
-      "ap2ID": "id-756"
-    },
-    {
       "ap2Name": "geometry",
       "ap1ID": "id-858",
       "ap2ID": "id-903"
@@ -857,6 +877,21 @@
       "ap2Name": "Shape 8",
       "ap1ID": "id-896",
       "ap2ID": "id-858"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-903",
+      "ap2ID": "id-756"
+    },
+    {
+      "ap2Name": "Item Name",
+      "ap1ID": "id-910",
+      "ap2ID": "id-903"
+    },
+    {
+      "ap2Name": "Cost (USD)",
+      "ap1ID": "id-915",
+      "ap2ID": "id-903"
     }
   ],
   "unitsKey": "Inches",
