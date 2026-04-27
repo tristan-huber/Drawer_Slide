@@ -2,5 +2,5 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|Drawer Slide 20 inches|0.5|$170.00|https://www.mcmaster.com/11435A14/|
-|Total: |0.5|$170.00| |
+|Drawer Slide 20 inches|0.5|$17.50|https://www.mcmaster.com/11435A14/|
+|Total: |0.5|$17.50| |

@@ -373,7 +373,7 @@
         },
         {
           "name": "Cost (USD)",
-          "ioValue": 170
+          "ioValue": 17.5
         },
         {
           "name": "Source Link",
@@ -384,7 +384,7 @@
       "BOMitem": {
         "BOMitemName": "Drawer Slide 20 inches",
         "numberNeeded": 0.5,
-        "costUSD": 170,
+        "costUSD": 17.5,
         "source": "https://www.mcmaster.com/11435A14/"
       }
     },
@@ -407,14 +407,38 @@
       "x": 0.6927083333333334,
       "y": 0.3044654939106901,
       "uniqueID": "id-915",
-      "name": "(l - 10) * 15 + 20",
+      "name": "((l - 10) * 1.5 + 20) / 2",
       "ioValues": [
         {
           "name": "l",
           "ioValue": 20
         }
       ],
-      "currentEquation": "(l - 10) * 15 + 20"
+      "currentEquation": "((l - 10) * 1.5 + 20) / 2"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.3108723958333333,
+      "y": 0.8741542625169146,
+      "uniqueID": "id-1029",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 17.64
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
     },
     {
       "atomType": "GitHubMolecule",
@@ -425,8 +449,7 @@
       "ioValues": [
         {
           "name": "Length",
-          "ioValue": 0.7,
-          "currentEquation": "0.7"
+          "ioValue": 0.7
         }
       ],
       "topLevel": false,
@@ -741,31 +764,6 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Move",
-      "x": 0.3108723958333333,
-      "y": 0.8741542625169146,
-      "uniqueID": "id-1029",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 17.64,
-          "currentEquation": "17.64"
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 0
-        }
-      ]
     }
   ],
   "allConnectors": [
@@ -915,14 +913,14 @@
       "ap2ID": "id-903"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-788",
-      "ap2ID": "id-823"
-    },
-    {
       "ap2Name": "Shape 5",
       "ap1ID": "id-1029",
       "ap2ID": "id-878"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-788",
+      "ap2ID": "id-823"
     }
   ],
   "unitsKey": "Inches",
